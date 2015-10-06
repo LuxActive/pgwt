@@ -1,0 +1,10 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:c="urn:import:com.google.gwt.user.cellview.client">
+
+	<g:HTMLPanel>
+		<paper-card ui:field="element">
+<!-- 			<div class="card-content"></div> -->
+		</paper-card>
+	</g:HTMLPanel>
+</ui:UiBinder> 
