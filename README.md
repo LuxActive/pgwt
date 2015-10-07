@@ -20,7 +20,6 @@ As of this moment the following Elements are supported. Elements will be added a
 | paper-input	| 1.0.14		|
 
 More elements following!
-
 <br/>
 
 ## 2. Installation
