@@ -1,7 +1,5 @@
 # pgwt
 
-<br/>
-
 Implementation for the Polymer 1.0 elements to be used in GWT projects.
 At the moment only a small portion of paper elements are supported, but more will follow.
 The elements are primarily designed to be used together with the **Ui-Binder**. 
@@ -28,4 +26,5 @@ More elements following!
 ## 2. Installation
 Manual installation is required as of yet.
 
-1. **maven install** - install the library into your locale maven repository.
+1. Import the project as maven project (Eclipse)
+2. **maven install** - install the library into your locale maven repository.
