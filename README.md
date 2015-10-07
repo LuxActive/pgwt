@@ -5,7 +5,6 @@ At the moment only a small portion of paper elements are supported, but more wil
 The elements are primarily designed to be used together with the **Ui-Binder**. 
 
 To checkout how this library looks and feels see our [pgwt showcase](https://github.com/LuxActive/pgwt.showcase).
-<br/>
 
 ## 1. Supported elements
 As of this moment the following Elements are supported. Elements will be added and existing updated.
@@ -20,7 +19,6 @@ As of this moment the following Elements are supported. Elements will be added a
 | paper-input	| 1.0.14		|
 
 More elements following!
-<br/>
 
 ## 2. Installation
 Manual installation is required as of yet.
