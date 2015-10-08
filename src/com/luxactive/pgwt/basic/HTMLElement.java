@@ -17,7 +17,7 @@ public interface HTMLElement extends Node {
 
 	@JsProperty
 	String getInnerText();
-	
+
 	@JsProperty
 	String getOuterHTML();
 
@@ -35,22 +35,22 @@ public interface HTMLElement extends Node {
 	void removeAttribute(String name);
 
 	void setAttribute(String name, String value);
-	
+	String getAttribute(String name);
+
 	@JsProperty
 	void setDisabled(boolean disabled);
-	
+
 	@JsProperty
 	boolean getDisabled();
-	
+
 	@JsProperty
 	void setNoink(boolean noink);
-	
-//	@JsProperty
-//	void setElevation(int elevation);
-	
+
 	HTMLElement[] getElementsByTagName(String tagName);
+
 	HTMLElement[] getElementsByClassName(String className);
 	
 	void removeChild(com.google.gwt.dom.client.Node element);
+
 	void appendChild(HTMLElement element);
 }

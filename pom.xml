@@ -5,7 +5,8 @@
 	<artifactId>pgwt</artifactId>
 	<version>0.1</version>
 	<packaging>jar</packaging>
-	<name>pgwt</name>
+	
+	<name>pgwt library</name>
 	<description>1.0 Polymer library for GWT</description>
 	<url>http://www.luxactive.com/</url>
 

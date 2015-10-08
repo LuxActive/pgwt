@@ -24,6 +24,10 @@ public abstract class BasicPaperElement extends Composite{
 	public void addEventListener(String event, EventListener listener){
 		getHTMLElement().addEventListener(event, listener);
 	}
+	
+	public void addClickEventListener(EventListener listener){
+		addEventListener("click", listener);
+	}
 
 	public void setVisible(boolean visible){
 		getHTMLElement().setHidden(!visible);

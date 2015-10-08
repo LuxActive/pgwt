@@ -1,4 +1,4 @@
-package com.luxactive.pgwt.paper_icon_button;
+package com.luxactive.pgwt.paper_radio_button;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,47 +28,47 @@ import com.luxactive.pgwt.paper_material.IPaperMaterial;
 import net.sourceforge.htmlunit.corejs.javascript.ast.Label;
 
 
-public class PaperIconButton extends BasicPaperElement{
+public class PaperRadioButton extends BasicPaperElement{
 
 	private static PaperButtonUiBinder uiBinder = GWT
 			.create(PaperButtonUiBinder.class);
 
-	interface PaperButtonUiBinder extends UiBinder<Widget, PaperIconButton> {
+	interface PaperButtonUiBinder extends UiBinder<Widget, PaperRadioButton> {
 	}
 
 	@UiField
-	IPaperIconButton button;
+	IPaperRadioButton button;
 
-	public PaperIconButton(final IPaperIconButton button) {
+	public PaperRadioButton(final IPaperRadioButton button) {
 		this.button = button;
 	}
 
-	public PaperIconButton() {
+	public PaperRadioButton() {
 		initWidget(uiBinder.createAndBindUi(this));
-	}
-
-	public void setIcon(String iconName){
-		button.setIcon(iconName);
-//		IPaperMaterial material = (IPaperMaterial)button.getElementsByTagName(paper_material)[0];
-//		IIronIcon icon = (IIronIcon)material.getElementsByTagName(IIronIcon.tag)[0];
-//		if(icon == null){
-//			material.setInnerHTML(IIronIcon.element+material.getInnerHTML());
-//			icon = (IIronIcon)material.getElementsByTagName(IIronIcon.tag)[0];
-//			icon.setAttribute("icon", iconName);
-//		}else
-//			icon.setIcon(iconName);
-	}
-	
-	public void setAlt(String alt){
-		button.setAlt(alt);
-	}
-	
-	public void setSrc(String src){
-		button.setSrc(src);
 	}
 
 	@Override
 	public HTMLElement getHTMLElement() {
 		return button;
 	}
+
+	public void setLabel(String label){
+		HTMLElement[] elements = button.getElementsByClassName("style-scope paper-radio-button");
+		for(int i = 0; i<elements.length; i++){
+			HTMLElement el = elements[i];
+			if(el.getAttribute("id").equals("radioLabel")){
+				el.setInnerHTML(label);
+				break;
+			}
+		}
+	}
+
+	public void setChecked(boolean checked){
+		button.setChecked(checked);
+	}
+
+	public boolean getChecked(){
+		return button.getChecked();
+	}
+
 }

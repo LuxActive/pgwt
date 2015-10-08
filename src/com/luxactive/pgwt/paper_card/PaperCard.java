@@ -74,16 +74,6 @@ public class PaperCard extends BasicPaperElement implements HasHTML{
 		}
 	}
 
-	//	public void setElevation(int elevation){
-	//		element.setElevation(elevation); //not reacting
-	//		IPaperMaterial material = (IPaperMaterial)element.getElementsByTagName(paper_material)[0];
-	//		if(material != null)material.setElevation(element.getElevation());
-	//	}
-	//	
-	//	public int getElevation(){
-	//		return element.getElevation();//not reacting
-	//	}
-
 	public void setAnimatedShadow(boolean animated){
 		element.setAnimatedShadow(animated);
 	}
