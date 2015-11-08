@@ -69,16 +69,19 @@ public class PaperButton extends BasicPaperElement{
 	}
 
 	public void setText(String text) {
-		IPaperMaterial material = (IPaperMaterial)button.getElementsByClassName("content")[0];
-		material.setInnerHTML(material.getInnerHTML()+text);
+		button.setInnerHTML(button.getInnerHTML()+text);
+	}
+	
+	public void setToggles(boolean toggles) {
+		button.setAttribute("toggles", ""+toggles);
 	}
 
 	public void setIcon(String iconName){
-		IPaperMaterial material = (IPaperMaterial)button.getElementsByClassName("content")[0];
-		IIronIcon icon = (IIronIcon)material.getElementsByTagName(IIronIcon.tag)[0];
+//		IPaperMaterial material = (IPaperMaterial)button.getElementsByClassName("content")[0];
+		IIronIcon icon = (IIronIcon)button.getElementsByTagName(IIronIcon.tag)[0];
 		if(icon == null){
-			material.setInnerHTML(IIronIcon.element+material.getInnerHTML());
-			icon = (IIronIcon)material.getElementsByTagName(IIronIcon.tag)[0];
+			button.setInnerHTML(IIronIcon.element+button.getInnerHTML());
+			icon = (IIronIcon)button.getElementsByTagName(IIronIcon.tag)[0];
 			icon.setAttribute("icon", iconName);
 		}else
 			icon.setIcon(iconName);

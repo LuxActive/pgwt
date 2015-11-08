@@ -1,9 +1,16 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
 	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:c="urn:import:com.google.gwt.user.cellview.client">
+	
+	<ui:style>
+	<!-- Default toggle style -->
+	paper-button[toggles][active] {
+		background: rgba(0, 0, 0, 0.25);
+	}
+	</ui:style>
 
 	<g:HTMLPanel>
-		<paper-button ui:field="button"/>
+		<paper-button ui:field="button" />
 	</g:HTMLPanel>
-	
+
 </ui:UiBinder> 
