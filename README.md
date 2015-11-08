@@ -16,7 +16,7 @@ As of this moment the following Elements are supported. Elements will be added a
 | --------		| -------- 	|
 | paper-button	| 1.0.8		|
 | iron-icons	| 1.0.3		|
-| paper-card	| 1.0.5		|
+| paper-card	| 1.0.7		|
 | paper-icon-button	| 1.0.3		|
 | paper-drawer-panel	| 1.0.3		|
 | paper-input	| 1.0.14		|
